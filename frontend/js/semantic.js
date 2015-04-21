@@ -3373,7 +3373,7 @@ $.fn.dimmer.settings = {
 
 })( jQuery, window , document );
 /*!
- * # Semantic UI 1.11.6 - Dropdown 
+ * # Semantic UI 1.11.6 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6672,7 +6672,7 @@ $.fn.popup = function(parameters) {
             ;
             clearTimeout(module.hideTimer);
             module.showTimer = setTimeout(function() {
-              if(module.is.hidden() && !( module.is.active() && module.is.dropdown()dropdown()) ) {
+              if(module.is.hidden() && !( module.is.active() && module.is.dropdown()) ) {
                 module.show();
               }
             }, delay);
