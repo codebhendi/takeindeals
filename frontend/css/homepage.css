@@ -336,5 +336,13 @@ Shipping
 	}
 
 /********************
-paymnet
+invoice
 ********************/
+	.ten {
+		text-align:center;
+	}
+	.invoice {
+	
+		text-align:center;
+		border-spacing:5px !important;
+	}
