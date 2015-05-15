@@ -1,0 +1,38 @@
+.centered {
+	text-align : center; 
+}
+
+#menuRow {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+div .text-on-image {
+	position: absolute;
+	top:34%;
+	left:45%;
+}
+
+.item-catalog {
+	max-height:350px;
+	max-width:250px;
+	text-align:center;
+	border: 2px yellow solid;
+	padding:2px;
+}
+
+.item-catalog img {
+	max-width:200px;
+	max-height:200px
+}
+
+#collection-portrait {
+	display: inline-block;
+	padding:0px;
+}
+
+#collection-portrait img{
+	display: block;
+	max-width:200px;
+	max-height:200px;
+}
