@@ -18,6 +18,7 @@
   
 </head>
 <body>
+  <!-- Containes the header of Homepage -->
   <div class="ui segment">
     <div class="ui grid">
       <div class="ui row" id="menuRow">
@@ -47,85 +48,244 @@
       </div>
     </div>
   </div>
+  <!-- header end -->
+
+  <!-- body of the page-->
   <div class="ui segemnt">
     <div class="ui grid">
-      <div class="one wide column">
-      </div>
+      <div class="one wide column"></div>
+      <!-- body is trimmed -->
+      <!-- the body will be written in fourteen wide column -->
       <div class="fourteen wide column" >
         <div class="ui segment">
-          <div class="ui grid">
-            <div class="sixteen wide centered column">
-              <a href="">
-                <img class="ui image" src="../images/1.jpg"></img>
-              </a>
-              <div class="text-on-image">
-                <div class="ui button">shop now</div>
+          <!-- offers segment -->
+          <div class="ui segment">
+            <div class="ui horizontal divider">
+              <h1 class="ui header">Biggest Offers</h1>
+            </div>
+            <div class="ui grid">
+              <div class="sixteen wide centered column">
+                <a href="">
+                  <img class="ui responsive image" src="../images/1.jpg"></img>
+                </a>
+                <div class="text-on-image">
+                  <div class="ui button">shop now</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="ui grid">
-            <div class="ui centered row">
-              <div class="four wide column" id="collection-portrait">
-                <a href="#"><img src="../images/collections/watch.jpg" class="ui image"></img></a>
+          <!-- end offers segment -->
+
+          <!-- collection segment -->
+          <div class="ui segment">
+            <div class="ui horizontal divider">
+              <h2 class="ui header">Explore our Collection</h2>
+            </div>
+            <!-- used dimmer to highlight the images -->
+            <div class="ui grid">
+              <div class="ui centered row" id="collection">
+                <div class="four wide column collection-portrait">
+                  <div class="ui image hover responsive">
+                    <a href="#"><img src="../images/collections/watch.jpg"></img></a>
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="text-in-block"><div class="ui red button">Watch</div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="four wide column collection-portrait">
+                  <div class="ui image hover responsive">
+                    <a href="#"><img src="../images/collections/shoes.jpg"></img></a>
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="text-in-block"><div class="ui red button">Shoes</div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="four wide column collection-portrait">
+                  <div class="ui image hover responsive"><a href="#"><img src="../images/collections/watch.jpg"></img></a>
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="text-in-block"><div class="ui red button">Watch</div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="four wide column collection-portrait">
+                  <div class="ui image hover responsive"><a href="#"><img src="../images/collections/watch.jpg"></img></a>
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="text-in-block"><div class="ui red button">Watch</div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>     
               </div>
-              <div class="four wide column" id="collection-portrait">
-                <a href="#"><img src="../images/collections/shoes.jpg" class="ui image"></img></a>
-              </div>
-              <div class="four wide column" id="collection-portrait">
-                <a href="#"><img src="../images/collections/watch.jpg" class="ui image"></img></a>
-              </div>
-              <div class="four wide column" id="collection-portrait">
-                <a href="#"><img src="../images/collections/watch.jpg" class="ui image"></img></a>
-              </div>
-            </div>          
+            </div>
+            <!-- end of all dimmers -->     
           </div>
-          <div class="ui grid">
-            <div class="ui centered row">
-              <div class="three wide column">
-                <div class="item-catalog">
-                  <img src="../images/item-catalog/item-1.jpg" id="item-1" class="ui img"></img><br>
-                  <b>Item-Name</b><br>
-                  <b>by <i>brand-name</i></b><br>
-                  <b>Item-price</b>
+          <!-- end collection segment -->
+
+          <!-- lates releases or trending -->
+          <div class="ui segment">
+            <div class="ui horizontal divider">
+              <h2 class="ui header">Latest releases</h2>
+            </div>
+            <div class="ui grid">
+              <div class="ui centered row">
+                <div class="three wide column">
+                  <div class="item-catalog" id="item-1">
+                    <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
+                    <b>Item-Name</b><br>
+                    <b>by <i>brand-name</i></b><br>
+                    <b>Item-price</b>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <div class="item-catalog"  id="item-2">
+                    <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
+                    <b>Item-Name</b><br>
+                    <b>by <i>brand-name</i></b><br>
+                    <b>Item-price</b>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <div class="item-catalog"  id="item-3">
+                    <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
+                    <b>Item-Name</b><br>
+                    <b>by <i>brand-name</i></b><br>
+                    <b>Item-price</b>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <div class="item-catalog"  id="item-4">
+                    <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
+                    <b>Item-Name</b><br>
+                    <b>by <i>brand-name</i></b><br>
+                    <b>Item-price</b>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <div class="item-catalog" id="item-5">
+                    <img src="../images/item-catalog/item-1.jpg" class="item-img  ui image responsive"></img><br>
+                    <b>Item-Name</b><br>
+                    <b>by <i>brand-name</i></b><br>
+                    <b>Item-price</b>
+                  </div>
                 </div>
               </div>
-              <div class="three wide column">
-                <div class="item-catalog">
-                  <img src="../images/item-catalog/item-1.jpg" id="item-1" class="ui img"></img><br>
-                  <b>Item-Name</b><br>
-                  <b>by <i>brand-name</i></b><br>
-                  <b>Item-price</b>
+            </div>
+          </div>
+          <!-- end latest releases or trending-->
+
+          <!-- blogs -->
+          <div class="ui segment">
+            <div class="ui horizontal divider">
+              <h2>latest blogs</h2>
+            </div>
+            <div class="ui grid">
+              <div class="ui centered row">
+                <div class="five wide column blogs">
+                  <div class="ui medium image">
+                    <img src="../images/blogs/lumia_535.jpg" id="lumia_535.jpg">
+                  </div>
+                  <p><b>Lumia 535</b> by <i>Microsoft</i></p>
+                </div>
+                <div class="five wide column blogs">
+                  <div class="ui medium image">
+                    <img src="../images/blogs/lumia_640.jpg" id="lumia_640.jpg">
+                  </div>
+                  <p><b>Lumia 640</b> by <i>Microsoft</i></p>
+                </div>
+                <div class="five wide column blogs">
+                  <div class="ui medium image">
+                    <img src="../images/blogs/lumia_532.jpg" id="lumia_532.jpg">
+                  </div>
+                  <p><b>Lumia 532</b> by <i>Microsoft</i></p>
                 </div>
               </div>
-              <div class="three wide column">
-                <div class="item-catalog">
-                  <img src="../images/item-catalog/item-1.jpg" id="item-1" class="ui img"></img><br>
-                  <b>Item-Name</b><br>
-                  <b>by <i>brand-name</i></b><br>
-                  <b>Item-price</b>
-                </div>
-              </div>
-              <div class="three wide column">
-                <div class="item-catalog">
-                  <img src="../images/item-catalog/item-1.jpg" id="item-1" class="ui img"></img><br>
-                  <b>Item-Name</b><br>
-                  <b>by <i>brand-name</i></b><br>
-                  <b>Item-price</b>
-                </div>
-              </div>
-              <div class="three wide column">
-                <div class="item-catalog">
-                  <img src="../images/item-catalog/item-1.jpg" id="item-1" class="ui img"></img><br>
-                  <b>Item-Name</b><br>
-                  <b>by <i>brand-name</i></b><br>
-                  <b>Item-price</b>
-                </div>
-              </div>
+            </div>
+          </div>
+          <!-- end blogs -->
+
+        </div>
+      </div>
+      <!-- end of fourteend wide column-->
+      <div class="one wide column"></div>
+    </div>
+  </div>
+  <!-- end of homepage body section -->
+
+  <!-- footer section -->
+  <div class="ui footer segment">
+    <div class="ui satckable center aligned page grid">
+      <div class="one column row">
+        <div class="column">
+          <p>Like what you see ?</p>
+          <p>Contact us then</p>
+          <ol class="nav-footer">
+            <li>About us</li>
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>Our Story</li>
+          </ol>
+          <br>
+        </div>
+      </div>
+      <div class="ui horizontal divider"><i class="huge fighter jet icon" style="font-size:4em"></i></div>
+      <div class="four column row">
+        <p>You can folllow us here</p>
+        <div class="column">
+          <div class="ui shape">
+            <div class="sides">
+              <div class="active side"> <i class="huge facebook icon"></i></div>         
+              <div class="side"><i class="huge twitter icon"></i></div>
+              <div class="side"><i class="huge github icon"></i></div>
+              <div class="side"><i class="huge linkedin icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side"><i class="huge twitter icon"></i></div>
+            <div class="side"><i class="huge github icon"></i></div>
+            <div class="side"><i class="huge linkedin icon"></i></div>
+            <div class="side"><i class="huge facebook icon"></i></div>
+          </div>
+        </div>
+      </div>
+        <div class="column">
+          <div class="ui shape">
+            <div class="sides">
+              <div class="active side"><i class="huge github icon"></i></div>
+              <div class="side"><i class="huge linkedin icon"></i></div>
+              <div class="side"><i class="huge facebook icon"></i></div>
+              <div class="side"><i class="huge twitter icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui shape">
+            <div class="sides">
+              <div class="active side"><i class="huge linkedin icon"></i></div>
+              <div class="side"><i class="huge facebook icon"></i></div>
+              <div class="side"><i class="huge twitter icon"></i></div>
+              <div class="side"><i class="huge github icon"></i></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="one wide column"></div>
     </div>
   </div>
 </body>
