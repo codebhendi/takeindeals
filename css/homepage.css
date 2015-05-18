@@ -25,6 +25,13 @@ div .text-on-image {
 	padding:0px;
 }
 
+.ui.inverted.segment > .ui.horizontal.divider {
+  color : #ffffff;
+}
+
+.ui.inverted.segment > .ui.horizontal.divider > .ui.header {
+  color : #ffffff;
+}
 .item-catalog img {
 	max-width:200px;
 	max-height:200px
