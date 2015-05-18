@@ -15,8 +15,8 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="../js/semantic.js"></script>
   <script src="../js/homepage.js"></script>
-  
 </head>
+
 <body>
   <!-- Containes the header of Homepage -->
   <div class="ui segment">
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="ui row">
-        <div class="ui centered menu" id="fixedMenu">
+        <div class="ui inverted centered menu" id="fixedMenu">
           <a class="item">Fresh</a>
           <a class="item">Men</a>
           <a class="item">Women</a>
@@ -58,32 +58,38 @@
       <!-- the body will be written in fourteen wide column -->
       <div class="fourteen wide column" >
         <div class="ui segment">
-          <!-- offers segment -->
+          <!-- arrivals segment -->
           <div class="ui segment">
             <div class="ui horizontal divider">
-              <h1 class="ui header">Biggest Offers</h1>
+              <h1 class="ui header">Hot Arrivals</h1>
+              <p>can be for latest blogs or new offers on various products your choice</p>
             </div>
             <div class="ui grid">
               <div class="sixteen wide centered column">
                 <a href="">
                   <img class="ui responsive image" src="../images/1.jpg"></img>
                 </a>
-                <div class="text-on-image">
-                  <div class="ui button">shop now</div>
+                <div class="content">
+                  <div class="center">
+                    <div class="ui button">shop now</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end offers segment -->
+          <!-- end  arrivals segment -->
 
-          <!-- collection segment -->
-          <div class="ui segment">
+          <!-- categories segment -->
+          <div class="ui inverted segment">
             <div class="ui horizontal divider">
               <h2 class="ui header">Explore our Collection</h2>
+              <p>This will be list og blogs on products in each categories</p>
             </div>
             <!-- used dimmer to highlight the images -->
             <div class="ui grid">
               <div class="ui centered row" id="collection">
+
+                <!-- watch segment -->
                 <div class="four wide column collection-portrait">
                   <div class="ui image hover responsive">
                     <a href="#"><img src="../images/collections/watch.jpg"></img></a>
@@ -96,6 +102,8 @@
                     </div>
                   </div>
                 </div>
+                <!-- end watch segment-->
+                
                 <div class="four wide column collection-portrait">
                   <div class="ui image hover responsive">
                     <a href="#"><img src="../images/collections/shoes.jpg"></img></a>
@@ -108,6 +116,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="four wide column collection-portrait">
                   <div class="ui image hover responsive"><a href="#"><img src="../images/collections/watch.jpg"></img></a>
                     <div class="ui dimmer">
@@ -119,6 +128,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="four wide column collection-portrait">
                   <div class="ui image hover responsive"><a href="#"><img src="../images/collections/watch.jpg"></img></a>
                     <div class="ui dimmer">
@@ -130,6 +140,7 @@
                     </div>
                   </div>
                 </div>     
+              
               </div>
             </div>
             <!-- end of all dimmers -->     
@@ -139,48 +150,59 @@
           <!-- lates releases or trending -->
           <div class="ui segment">
             <div class="ui horizontal divider">
-              <h2 class="ui header">Latest releases</h2>
+              <h2 class="ui header">See something new</h2>
+              <p>all new products</p>
             </div>
             <div class="ui grid">
               <div class="ui centered row">
+                
                 <div class="three wide column">
                   <div class="item-catalog" id="item-1">
                     <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
                     <b>Item-Name</b><br>
                     <b>by <i>brand-name</i></b><br>
                     <b>Item-price</b>
+                    <div class="ui button">Quick View</div>
                   </div>
                 </div>
+                
                 <div class="three wide column">
                   <div class="item-catalog"  id="item-2">
                     <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
                     <b>Item-Name</b><br>
                     <b>by <i>brand-name</i></b><br>
                     <b>Item-price</b>
+                    <div class="ui button">Quick View</div>
                   </div>
                 </div>
+                
                 <div class="three wide column">
                   <div class="item-catalog"  id="item-3">
                     <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
                     <b>Item-Name</b><br>
                     <b>by <i>brand-name</i></b><br>
                     <b>Item-price</b>
+                    <div class="ui button">Quick View</div>
                   </div>
                 </div>
+                
                 <div class="three wide column">
                   <div class="item-catalog"  id="item-4">
                     <img src="../images/item-catalog/item-1.jpg" class="item-img ui image responsive"></img><br>
                     <b>Item-Name</b><br>
                     <b>by <i>brand-name</i></b><br>
                     <b>Item-price</b>
+                    <div class="ui button">Quick View</div>
                   </div>
                 </div>
+                
                 <div class="three wide column">
                   <div class="item-catalog" id="item-5">
                     <img src="../images/item-catalog/item-1.jpg" class="item-img  ui image responsive"></img><br>
                     <b>Item-Name</b><br>
                     <b>by <i>brand-name</i></b><br>
                     <b>Item-price</b>
+                    <div class="ui button">Quick View</div>                  
                   </div>
                 </div>
               </div>
@@ -191,7 +213,7 @@
           <!-- blogs -->
           <div class="ui segment">
             <div class="ui horizontal divider">
-              <h2>latest blogs</h2>
+              <h2>New about Us</h2>
             </div>
             <div class="ui grid">
               <div class="ui centered row">
@@ -227,7 +249,7 @@
   <!-- end of homepage body section -->
 
   <!-- footer section -->
-  <div class="ui footer segment">
+  <div class="ui inverted footer segment">
     <div class="ui satckable center aligned page grid">
       <div class="one column row">
         <div class="column">
@@ -243,8 +265,12 @@
         </div>
       </div>
       <div class="ui horizontal divider"><i class="huge fighter jet icon" style="font-size:4em"></i></div>
-      <div class="four column row">
-        <p>You can folllow us here</p>
+      <div class="one column row">
+        <div class="column">
+          <p>You can folllow us here</p>
+        </div>
+      </div>
+      <div class="four column row social">
         <div class="column">
           <div class="ui shape">
             <div class="sides">
@@ -284,6 +310,11 @@
               <div class="side"><i class="huge github icon"></i></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="one column row">
+        <div class="column">
+          copyright 911.Praedo maritimus
         </div>
       </div>
     </div>
