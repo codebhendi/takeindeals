@@ -16,31 +16,53 @@ $(document).ready(function() {
 		;
 	}
 
-	$('.ui.image.hover')
-		.dimmer({
-			on:'hover'
-		})
-	;
-
 	setInterval(changeSides, 3000);
 	
 });
 
-document.onscroll = fixMenuBar;
+
 window.onload = initall;
 
 function initall() {
-	//var catalogs = document.getElementsByClassName("onmouseover");
+	//var catalogs = document.getElementsByClassName("onmouseover")
 	var itemList = document.getElementsByClassName("item-img");
 	var blogList = document.getElementsByClassName("blogs");
+	var headerfixed = (function() {
+		var docElem = document.documentElement,
+			fixedRow = document.getElementById('fixedMenu'),
+			didScroll = false,
+			changeHeaderOn = 100;
 
-	/*for (var i = 0; i < catalogs.length; i++) {
-		if (catalogs[i]) {
-			catalogs[i].onmouseover = function () {
-				dimmer(catalogs[i]);
-			};
+		//alert(fixedRow);
+		function init() {
+			window.addEventListener( 'scroll', function( event ) {
+				if( !didScroll ) {
+					didScroll = true;
+					scrollPage();
+				}
+			}, false );
 		}
-	}*/
+
+		function scrollPage() {
+			var sy = scrollY();
+			if ( sy >= changeHeaderOn ) {
+				if (fixedRow.className.indexOf('fixed') <= -1) {
+					fixedRow.className = fixedRow.className + ' fixed';
+				}
+			}
+			else {
+				classRemove(fixedRow, 'fixed');
+			}
+			didScroll = false;
+		}
+
+		function scrollY() {
+			return window.pageYOffset || docElem.scrollTop;
+		}
+
+		init();
+
+	})();;
 
 	for (var i = 0; i < blogList.length; i++) {
 		blogList[i].onmouseover = changeBorder;
@@ -52,14 +74,6 @@ function initall() {
 		document.getElementById("item-"+k).onmouseout = resetBorder;
 	}
 
-	/*function dimmer() {
-		alert(this);
-		allTags = this.children;
-		for (var k = 0; k < allTags.length; k++) {
-				alert("found");
-		}
-	}*/
-
 	function changeBorder() {
 		///alert("v/mg")
 		this.style.border = "1px green solid";
@@ -68,34 +82,18 @@ function initall() {
 	function resetBorder() {
 		this.style.border = "1px white solid";
 	}
-}
 
-function fixMenuBar(evt) {
-	if (!evt) {
-		evt =window.event;
-	}
 
-	var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		minDist = 100;
-		fixedMenu = document.getElementById('fixedMenu'),
-		classes = fixedMenu.className;
-
-	if (distanceY > minDist) {
-		if (fixedMenu.className) {
-			classes = classes + " fixed";
-		}
-	} else {
-		if (fixedMenu.className) {
-			var tempClass = "";
-			var allClasses = fixedMenu.className.split(" ");
-			
-			for (var i = 0; i < allClasses.length; i++) {
-				if (allClasses[i] != "fixed" && allClasses[i] != "") {
-					tempClass = tempClass + allClasses[i] + " ";
-				}
+	function classRemove(thisTag, c) {
+		var classTemp = "";
+		var allClasses = thisTag.className.split(' ');
+		for(var j = 0; j < allClasses.length; j++) {
+			if (allClasses[j] != c) {
+				classTemp += allClasses[j] + " ";
 			}
-			classes = tempClass;
 		}
+		thisTag.className = classTemp;
 	}
-	fixedMenu.className = classes;
 }
+
+
