@@ -1,3 +1,5 @@
+
+
 .centered {
 	text-align : center; 
 }
@@ -10,12 +12,39 @@
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-
-div .text-on-image {
-	position: absolute;
-	top:34%;
-	left:45%;
+/*Slider deals*/
+#slider {
+	overflow : hidden;
+	width : 730px;
+	height: 300px;
 }
+
+#slider > img > #img1 {
+	border : 2px solid black;
+}
+
+#image_slider {
+	padding : 0px;
+	position : relative;
+}
+
+#image_slider li{
+	max-width : 100%;
+	float : left;
+	list-style: none;
+}
+
+/*slider deals end*/
+
+
+/* deals */
+div .deal-block {
+	border : 1px dashed black;
+	border-radius: 500rem;
+	padding : 5px;
+	text-align: center;
+}
+/* deals end */
 
 .item-catalog {
 	max-height:350px;
@@ -44,9 +73,9 @@ div .text-on-image {
 }
 
 #categories-blogs {
-	padding-left : 15%;
-	padding-right : 15%;
-	padding-bottom: 45px;
+	padding-left : 4%;
+	padding-right : 4%;
+	padding-bottom: 25px;
 }
 
 div .four.wide.column.division-label {
