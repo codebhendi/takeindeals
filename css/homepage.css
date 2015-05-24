@@ -44,6 +44,22 @@ div .deal-block {
 	padding : 5px;
 	text-align: center;
 }
+
+div .hidden-offer {
+	opacity : 0;
+	z-index : 2;
+	top : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;
+	height : 100%;
+	position: absolute;
+	border-radius : 100rem;
+	background-color: rgba(256, 256, 256, 0.4);
+	color : black;
+}
+
+
 /* deals end */
 
 .item-catalog {

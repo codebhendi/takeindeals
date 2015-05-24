@@ -43,6 +43,7 @@ function initall() {
 	//var catalogs = document.getElementsByClassName("onmouseover")
 	var itemList 	= document.getElementsByClassName("item-img"),
 		blogList 	= document.getElementsByClassName("blogs"),
+		hiddenDeal	= document.getElementsByClassName("deal-block");
 		headerfixed = (function() {
 		
 			var docElem 		= document.documentElement,
@@ -82,15 +83,21 @@ function initall() {
 		})()
 	;
 	
-	for (var i = 0; i < blogList.length; i++) {
-		blogList[i].onmouseover 	= changeBorder;
-		blogList[i].onmouseout 		= resetBorder;
+	for (var k = 0; k < blogList.length; k++) {
+		blogList[k].onmouseover 	= changeBorder;
+		blogList[k].onmouseout 		= resetBorder;
 	}
 	
 	for (var k = 1; k <= itemList.length; k++) {
 		document.getElementById("item-"+k).onmouseover 	= changeBorder;
 		document.getElementById("item-"+k).onmouseout 	= resetBorder;
 	}
+
+	for (var j = 0; j < hiddenDeal.length; j++) {
+		hiddenDeal[j].onmouseover = visibilityToggle;
+		hiddenDeal[j].onmouseout  = visibilityToggle;
+	}
+
 
 	function changeBorder() {
 		///alert("v/mg")
@@ -111,6 +118,16 @@ function initall() {
 			}
 		}
 		thisTag.className = classTemp;
+	}
+
+	function visibilityToggle() {
+		var thisTag = this.children[1];
+
+		if (thisTag.style.opacity == 0) {
+			thisTag.style.opacity = 1;
+		} else {
+			thisTag.style.opacity = 0;
+		}
 	}
 }
 
