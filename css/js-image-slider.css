@@ -1,7 +1,7 @@
 /* http://www.menucool.com */
 
 #sliderFrame, #sliderFrame div {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 /*slider frame*/
 
@@ -12,7 +12,7 @@
 }
 
 #slider {
-	background:transparent url(loading.gif) no-repeat 50% 50%;
+	background:transparent url(../images/slider/loading.gif) no-repeat 50% 50%;
 	position:relative;
 	margin:0 auto; /*center-aligned*/
     transform: translate3d(0,0,0);
@@ -39,6 +39,7 @@
 	bottom:30px;/* or top: ??px; */
 	z-index:3;
 	overflow:hidden;
+	display : none;
 	font-size:0;
 }
 #slider div.mc-caption-bg {
@@ -72,7 +73,7 @@
 #slider div.loading 
 {
     width:100%; height:100%;
-    background:transparent url(loading.gif) no-repeat 50% 50%;
+    background:transparent url(../images/slider/loading.gif) no-repeat 50% 50%;
     filter: alpha(opacity=60);
     opacity:0.6;
     position:absolute;
@@ -99,7 +100,7 @@
 /* -- thumbnails -- */
 #thumbs
 {
-	background:white url(thumbs-bar.gif) repeat-x 0 0;
+	background:white url(../images/slider/thumbs-bar.gif) repeat-x 0 0;
 	border:1px solid white; text-align:center;
 	font-size:0px;
 	line-height:45px;
@@ -114,6 +115,6 @@
     display:inline-block;
     *display:inline;zoom:1; /*IE Hack*/
 }
-#thumbs .thumb-on {background-image: url(active-bg.png);}
+#thumbs .thumb-on {background-image: url(../images/slider/active-bg.png);}
 #thumbs .thumb img {vertical-align:middle;}
 
