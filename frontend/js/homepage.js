@@ -1,9 +1,17 @@
 $(document).ready(function() {
-	var slider = 1;
-	var sliderNext = 2;
+	var imageNumber = $('#slider > a > img').size(),
+		sliderNext = 2;
 
-	$("#slider > img#1").fadeIn(300);
-	startSlider();
+	$("#slider > a > img#1").fadeIn(300);
+
+	for (var k = 0; k < $("#thumbnail > li").size(); k++) {
+		$("#thumbnail > li > div").on("click", function(ev) {
+			sliderNext = parseInt($(this).attr("id")[5]);
+			(loop)();
+		});
+		break;
+	}
+
 
 	var changeSides = function() {
 		$('.ui.shape')
@@ -24,15 +32,15 @@ $(document).ready(function() {
 
 	setInterval(changeSides, 3000);
 
-	function startSlider() {
-		var imageNumber = $('#slider > img').size();
-		loop = setInterval(function() {
-			$('#slider > img').fadeOut(300);
-			$('#slider > img#' + sliderNext).fadeIn(300);
+	var loop = function startSlider() {
+		$('#slider > a > img').fadeOut(300);
+		console.log($("#slider > a > img#" + sliderNext));
+		$('#slider > a > img#' + sliderNext).fadeIn(300);
 			
-			sliderNext = (sliderNext % imageNumber) + 1;
-		}, 3000);
-	}
+		sliderNext = (sliderNext % imageNumber) + 1;
+	};
+
+	setInterval(loop, 5000);
 	
 });
 
@@ -49,7 +57,7 @@ function initall() {
 			var docElem 		= document.documentElement,
 				fixedRow 		= document.getElementById('fixedMenu'),
 				didScroll 		= false,
-				changeHeaderOn 	= 600;
+				changeHeaderOn 	= 500;
 
 			//alert(fixedRow);
 			function init() {

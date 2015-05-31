@@ -156,12 +156,8 @@
 
   <link rel="stylesheet" type="text/css" href="../css/semantic.css"/>
   <link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
-  <link rel="stylesheet" type="text/css" href="../css/js-image-slider.css"/>
+  <!--link rel="stylesheet" type="text/css" href="../css/js-image-slider.css"/-->
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="../js/semantic.js"></script>
-  <script src="../js/homepage.js"></script>
-  <script src="../js/js-image-slider.js"></script>
 </head>
 
 <body>
@@ -177,7 +173,7 @@
 <!--loader section end-->
 
   <!-- Containes the header of Homepage -->
-  <div class="ui segment">
+  <div class="ui segment headerMenu">
     <div class="ui grid">
       <div class="ui row" id="menuRow">
         <div class="ui inverted menu">
@@ -208,22 +204,32 @@
         <div class="ui segment">
           <div class="ui grid">
             <div class="one column row">
-              <div class="column" id="sliderFrame">
-                  <div id="slider">
-                    <a href="#"><img src="../images/hot-deals/deal-1.jpg" alt="deal 1" /></a>
-                    <a href="#"><img src="../images/hot-deals/deal-2.jpg" alt="deal 2" /></a>
-                    <a href="#"><img src="../images/hot-deals/deal-3.jpg" alt="deal 3" /></a>
-                    <a href="#"><img src="../images/hot-deals/deal-4.jpg" alt="deal 4" /></a>
-                    <a href="#"><img src="../images/hot-deals/deal-5.jpg" alt="deal 5" /></a>
-                  </div>
-                  <!--thumbnails-->
-                  <div id="thumbs">
-                    <div class="thumb"><img src="../images/thumbnails/thumb-1.gif" /></div>
-                    <div class="thumb"><img src="../images/thumbnails/thumb-2.gif" /></div>
-                    <div class="thumb"><img src="../images/thumbnails/thumb-3.gif" /></div>
-                    <div class="thumb"><img src="../images/thumbnails/thumb-4.gif" /></div>
-                    <div class="thumb"><img src="../images/thumbnails/thumb-5.gif" /></div>
-                  </div>
+              <div class="column">
+                <div id="slider">
+                  <a href="#"><img src="../images/hot-deals/deal-1.jpg" alt="deal 1" id="1"/></a>
+                  <a href="#"><img src="../images/hot-deals/deal-2.jpg" alt="deal 2" id="2"/></a>
+                  <a href="#"><img src="../images/hot-deals/deal-3.jpg" alt="deal 3" id="3"/></a>
+                  <a href="#"><img src="../images/hot-deals/deal-4.jpg" alt="deal 4" id="4"/></a>
+                  <a href="#"><img src="../images/hot-deals/deal-5.jpg" alt="deal 5" id="5"/></a>
+                </div>
+                <!--thumbnails-->
+                <ul id="thumbnail">
+                  <li>
+                    <div class="blue" id="thumb1"></div>
+                  </li>
+                  <li>
+                    <div class="orange" id="thumb2"></div>
+                  </li>
+                  <li>
+                    <div class="green" id="thumb3"></div>
+                  </li>
+                  <li>
+                    <div class="yellow" id="thumb4"></div>
+                  </li>
+                  <li>
+                    <div class="red" id="thumb5"></div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -233,7 +239,7 @@
         <!--deals show-->
         <div class="ui segment">
           <div class="ui grid">
-            <div class="centered row" > 
+            <div class="centered row fixedmenubar" > 
               <div class="ui menu" id="fixedMenu">
                 <a class="item">Men</a>
                 <a class="item">Women</a>
@@ -426,6 +432,11 @@
     </div>
   </div>
   <!--footer end-->
+
+  <script src="../js/jquery-2.1.4.js"></script>
+  <script src="../js/semantic.js"></script>
+  <script src="../js/homepage.js"></script>
+  <!--script src="../js/js-image-slider.js"></script-->
 
 </body>
 </html>
